@@ -1,38 +1,216 @@
-.App {
+/*Globals*/
+* {
+  box-sizing: border-box;
+}
+html body {
+  background-color: #ccc;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.icon {
+  stroke-width: 0;
+  stroke: black;
+  fill: blue;
+}
+.wait-on-select {
+  background-color: chocolate;
+  color: white;
+  font-size: 1.5rem;
+  padding: 2% 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.small-text {
+  font-size: .8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  color: darkgreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main header*/
+.main-header {
+  background-color: #000;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.main-header h1 {
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  font-style: italic;
+}
+.main-header .main-header-icon {
+  color: darkgreen;
+  font-size: 2.5rem;
+  height: 2.5rem;
+  margin-right: .5rem;
+  width: 2.3rem;
+}
+
+  /*Park Select dropdown*/
+.main-header .park-select-text {
+  color: white;
+  padding-right: 10px;
+}
+.main-header .park-select-text + div {
+  min-width: 240px;
+}
+.main-header .park-select-text,
+.main-header .park-select-text + div {
+  display: inline-block;
+}
+
+/*Main content*/
+.main-content-area {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+  /*About  section*/
+.about {
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+.about .about-place,
+.about .about-pics {
+  padding: 1.5% 1.5% 1.5%;
+  width: 50%;
+}
+.about .about-place p {
+  margin-bottom: 0;
+}
+.about .about-pics .carousel {
+  max-height: 215px;
+  overflow-y: hidden;
+}
+.about .carousel-control-prev,
+.about .carousel-control-next {
+  display: none;
+}
+
+  /*description section*/
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3% 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(240, 228, 208);
+}
+.main-description {
+  background-color: #830;
+  box-shadow: 2px 2px 0 #aaa;
+  border-radius: 8px;
+  padding: 2%;
+  width: 95%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.description-tile {
+  background-color: #c1b49b;
+  box-shadow: 2px 2px 0 #aaa;
+  width: 30%;
+  padding: 1%;
+  border-radius: 8px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.description-tile h3 {
+  text-align: center;
+  color: #620;
+}
+.description-tile figure {
+  display: flex;
+  justify-content: center;
+}
+.description-tile figcaption {
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /*Activities section*/
+.activities {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2% auto;
+  width: 100%;
+}
+.activities > div {
+  flex: 0 0 50%;
+  padding: 0 1em;
+}
+.activities-list {
+  border: 2px solid #d6c9c2;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+  /*directions section*/
+.directions {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2% auto 0;
+  padding: 2%;
+  width: 100%;
+  background-color: rgb(240, 228, 208);
+}
+.directions h3 {
+  color: #620;
+}
+
+.directions-address {
+  flex: 1 0 50%;
+}
+
+.directions-address p {
+  margin-bottom: 0;
+}
+
+.directions-url {
+  padding: 1em 0;
+}
+
+.directions a {
+  padding: .5em 1em;
+  background: #074;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 #050;
+  position: relative;
+}
+
+.directions a:focus, .directions a:hover {
+  box-shadow: 3px 3px 0 #030;
+  background: #075;
+  color: #fff;
+  text-decoration: none;
+  top: 2px;
+  left: 2px;
+}
+
+/*Footer*/
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content:space-between;
+  padding: 1rem;
+}
+.footer-text-color {
+  color: white;
+  margin-bottom: 0;
 }
