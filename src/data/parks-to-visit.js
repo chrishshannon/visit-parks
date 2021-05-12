@@ -70,5 +70,73 @@ export const placesToVisit = [
     {
         "label":"Dry Totugas",
         "value":"drto"
+    },
+    {
+        "label":"Everglades",
+        "value":"ever"
+    },
+    {
+        "label":"Gates of the Artic",
+        "value":"gaar"
+    },
+    {
+        "label":"Gateway Arch",
+        "value":"jeff"
+    },
+    {
+        "label":"Glacier",
+        "value":"glac"
+    },
+    {
+        "label":"Glacier Bay",
+        "value":"glba"
+    },
+    {
+        "label":"Grand Canyon",
+        "value":"grca"
+    },
+    {
+        "label":"Grand Teton",
+        "value":"grte"
+    },
+    {
+        "label":"Great Basin",
+        "value":"grba"
+    },
+    {
+        "label":"Great Sand Dunes",
+        "value":"grsa"
+    },
+    {
+        "label":"Great Smoky Mountains",
+        "value":"grsm"
+    },
+    {
+        "label":"Guadalupe Mountains",
+        "value":"gumo"
+    },
+    {
+        "label":"Haleakala",
+        "value":"hale"
+    },
+    {
+        "label":"Hawaii Volcanoes",
+        "value":"havo"
+    },
+    {
+        "label":"Hot Springs",
+        "value":"hosp"
+    },
+    {
+        "label":"Indiana Dunes",
+        "value":"indu"
+    },
+    {
+        "label":"Isle Royale",
+        "value":"isro"
+    },
+    {
+        "label":"Joshua Tree",
+        "value":"jotr"
     }
 ]

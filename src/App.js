@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     if(selectedPark) {
-        const url = `https://developer.nps.gov/api/v1/parks?parkCode=${selectedPark.value}&api_key=insertAPIkeyhere`;
+        const url = `https://developer.nps.gov/api/v1/parks?parkCode=${selectedPark.value}&api_key=insertapikeyhere`;
         fetch(url)
         .then((response) => response.json())
         .then(setParkData);

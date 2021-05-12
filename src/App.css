@@ -41,6 +41,7 @@ h3 {
   background-color: #000;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1rem;
 }
 .main-header h1 {
@@ -69,6 +70,9 @@ h3 {
 .main-header .park-select-text + div {
   display: inline-block;
 }
+.main-header .park-select .park-select__menu {
+  z-index: 9999;
+}
 
 /*Main content*/
 .main-content-area {
@@ -82,6 +86,7 @@ h3 {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 .about .about-place,
@@ -163,6 +168,7 @@ h3 {
 .directions {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 2% auto 0;
   padding: 2%;
   width: 100%;
@@ -207,10 +213,41 @@ h3 {
 .footer {
   background-color: #000;
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
   padding: 1rem;
 }
 .footer-text-color {
   color: white;
   margin-bottom: 0;
+}
+
+/*media queries*/
+@media (max-width:760px) {
+  .main-header-icon.fa.fa-tree {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+  .main-heading {
+    flex: 0 0 100%;
+  }
+  .park-selection {
+    flex: 0 0 100%;
+    margin: 2% 0;
+  }
+  .main-content-area {
+    padding: 2%;
+  }
+  .about .about-place,
+  .about .about-pics {
+    flex: 0 0 100%;
+  }
+  .description-tile {
+    margin-bottom: 3%;
+    width: 95%;
+  }
+  .activities > div {
+    flex: 0 0 100%;
+    margin-bottom: 3%;
+  }
 }
